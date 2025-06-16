@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women's Soft Leather Sandals - Kenyamanan Premium Setiap Langkah</title>
-    <meta name="description" content="Sandal kulit premium untuk wanita modern. Desain elegan, bahan berkualitas tinggi, nyaman digunakan sepanjang hari.">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <title>Women's Soft Leather Sandals - Kenyamanan Premium untuk Kaki Anda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -19,29 +13,10 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --primary: #8B4513;
-            --primary-light: #CD853F;
-            --secondary: #DEB887;
-            --accent: #F4E4BC;
-            --text-dark: #2C1810;
-            --text-light: #6B4E37;
-            --white: #FFFFFF;
-            --black: #000000;
-            --success: #10B981;
-            --warning: #F59E0B;
-            --danger: #EF4444;
-            --gradient-1: linear-gradient(135deg, #8B4513 0%, #CD853F 100%);
-            --gradient-2: linear-gradient(135deg, #DEB887 0%, #F4E4BC 100%);
-            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
-            --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
-            --shadow-lg: 0 8px 25px rgba(0,0,0,0.2);
-        }
-
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            color: var(--text-dark);
+            color: #333;
             overflow-x: hidden;
         }
 
@@ -51,18 +26,467 @@
             padding: 0 20px;
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .live-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .hero-text .tagline {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 30px;
+            animation: slideInLeft 1s ease-out 0.2s both;
+        }
+
+        .hero-image {
+            text-align: center;
+            animation: slideInRight 1s ease-out;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Countdown Timer */
+        .countdown-section {
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .countdown-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .countdown-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            min-width: 80px;
+        }
+
+        .countdown-item .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .countdown-item .label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Problem & Solution */
+        .problem-solution {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .problem-solution-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .problem-box, .solution-box {
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .problem-box {
+            background: linear-gradient(135deg, #ff9a9e, #fecfef);
+        }
+
+        .solution-box {
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+        }
+
+        .problem-box:hover, .solution-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .problem-box h3, .solution-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Features */
+        .features {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.15);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        /* Product Gallery */
+        .gallery {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            animation: fadeIn 0.3s;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+
+        .testimonial-info h4 {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .stars {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+
+        /* Price Banner */
+        .price-banner {
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .price-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.15);
+            padding: 40px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+        }
+
+        .original-price {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+
+        .sale-price {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .discount-badge {
+            background: #ff4757;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            background: linear-gradient(135deg, #00b894, #00cec9);
+            color: white;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,184,148,0.3);
+            animation: pulse-cta 2s infinite;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,184,148,0.4);
+        }
+
+        @keyframes pulse-cta {
+            0% { box-shadow: 0 10px 30px rgba(0,184,148,0.3); }
+            50% { box-shadow: 0 15px 40px rgba(0,184,148,0.5); }
+            100% { box-shadow: 0 10px 30px rgba(0,184,148,0.3); }
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            padding: 60px 0;
+            background: #fff;
+            text-align: center;
+        }
+
+        .badges-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: #f8f9fa;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .badge i {
+            font-size: 2rem;
+            color: #00b894;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2d3436;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Animations */
         @keyframes slideInLeft {
             from {
                 opacity: 0;
@@ -85,614 +509,75 @@
             }
         }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
-        }
-
-        /* Header */
-        .header {
-            background: var(--gradient-1);
-            color: var(--white);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: var(--shadow-md);
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            animation: slideInLeft 1s ease-out;
-        }
-
-        .stats {
-            display: flex;
-            gap: 2rem;
-            animation: slideInRight 1s ease-out;
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 1.2rem;
-            font-weight: 700;
-            display: block;
-        }
-
-        .stat-label {
-            font-size: 0.8rem;
-            opacity: 0.9;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: var(--gradient-2);
-            padding: 4rem 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            opacity: 0.3;
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-text {
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .hero-badge {
-            background: var(--success);
-            color: var(--white);
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 1rem;
-            animation: bounce 2s infinite;
-        }
-
-        .hero-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-            color: var(--text-dark);
-        }
-
-        .hero-subtitle {
-            font-size: 1.3rem;
-            color: var(--text-light);
-            margin-bottom: 2rem;
-            line-height: 1.5;
-        }
-
-        .hero-image {
-            position: relative;
-            animation: slideInRight 1s ease-out 0.3s both;
-        }
-
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: var(--shadow-lg);
-            transition: transform 0.3s ease;
-        }
-
-        .hero-image:hover img {
-            transform: scale(1.05);
-        }
-
-        /* Price Banner */
-        .price-banner {
-            background: var(--gradient-1);
-            color: var(--white);
-            padding: 2rem 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .price-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .price-original {
-            font-size: 1.5rem;
-            text-decoration: line-through;
-            opacity: 0.7;
-        }
-
-        .price-sale {
-            font-size: 3rem;
-            font-weight: 800;
-            animation: pulse 2s infinite;
-        }
-
-        .price-discount {
-            background: var(--danger);
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-
-        /* Countdown Timer */
-        .countdown-section {
-            background: var(--black);
-            color: var(--white);
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        .countdown-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--warning);
-        }
-
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .countdown-item {
-            background: var(--primary);
-            padding: 1rem;
-            border-radius: 10px;
-            min-width: 80px;
-            animation: pulse 1s infinite alternate;
-        }
-
-        .countdown-number {
-            font-size: 2rem;
-            font-weight: 800;
-            display: block;
-        }
-
-        .countdown-label {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-
-        /* Problem Solution */
-        .problem-solution {
-            padding: 4rem 0;
-            background: var(--white);
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 3rem;
-            color: var(--text-dark);
-        }
-
-        .problem-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .problem-card, .solution-card {
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .problem-card {
-            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
-            border: 2px solid var(--danger);
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .solution-card {
-            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
-            border: 2px solid var(--success);
-            animation: fadeInUp 1s ease-out 0.2s both;
-        }
-
-        .problem-card:hover, .solution-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .problem-card .card-icon {
-            color: var(--danger);
-        }
-
-        .solution-card .card-icon {
-            color: var(--success);
-        }
-
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        /* Product Gallery */
-        .gallery-section {
-            padding: 4rem 0;
-            background: var(--accent);
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .gallery-item {
-            position: relative;
-            border-radius: 15px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            transition: filter 0.3s ease;
-        }
-
-        .gallery-item:hover img {
-            filter: brightness(1.1);
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(transparent, rgba(0,0,0,0.8));
-            color: var(--white);
-            padding: 1rem;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            transform: translateY(0);
-        }
-
-        /* Features */
-        .features-section {
-            padding: 4rem 0;
-            background: var(--white);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .feature-card {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: var(--shadow-md);
-            transition: transform 0.3s ease;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
-        .feature-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--text-dark);
-        }
-
-        /* Testimonials */
-        .testimonials-section {
-            padding: 4rem 0;
-            background: var(--gradient-2);
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .testimonial-card {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: var(--shadow-md);
-            animation: fadeInUp 1s ease-out;
-            position: relative;
-        }
-
-        .testimonial-quote {
-            font-size: 3rem;
-            color: var(--primary);
-            position: absolute;
-            top: -10px;
-            left: 1rem;
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 1rem;
-            padding-top: 1rem;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: var(--gradient-1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-weight: 700;
-        }
-
-        .author-info h4 {
-            font-weight: 600;
-            color: var(--text-dark);
-        }
-
-        .author-info span {
-            color: var(--text-light);
-            font-size: 0.9rem;
-        }
-
-        .testimonial-stars {
-            color: var(--warning);
-            margin-top: 0.5rem;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            padding: 4rem 0;
-            background: var(--gradient-1);
-            color: var(--white);
-            text-align: center;
-        }
-
-        .cta-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .cta-subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--warning);
-            color: var(--white);
-            padding: 1.5rem 3rem;
-            font-size: 1.3rem;
-            font-weight: 700;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
-            box-shadow: var(--shadow-lg);
-        }
-
-        .cta-button:hover {
-            background: #e68900;
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
-        }
-
-        .urgency-text {
-            margin-top: 1rem;
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.9);
-            animation: fadeInUp 0.3s ease-out;
-        }
-
-        .modal-content {
-            margin: 5% auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            animation: slideInRight 0.3s ease-out;
-        }
-
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .close:hover {
-            color: var(--warning);
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
-            .container {
-                padding: 0 15px;
-            }
-
             .hero-content {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+                text-align: center;
             }
 
-            .hero-title {
+            .hero-text h1 {
                 font-size: 2.5rem;
             }
 
-            .hero-subtitle {
-                font-size: 1.1rem;
-            }
-
-            .price-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .price-sale {
-                font-size: 2.5rem;
-            }
-
-            .problem-grid {
+            .problem-solution-grid {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+            }
+
+            .countdown {
+                gap: 10px;
+            }
+
+            .countdown-item {
+                padding: 15px;
+                min-width: 60px;
+            }
+
+            .countdown-item .number {
+                font-size: 1.8rem;
+            }
+
+            .live-stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .badges-container {
+                gap: 20px;
             }
 
             .section-title {
                 font-size: 2rem;
             }
-
-            .cta-title {
-                font-size: 2.5rem;
-            }
-
-            .stats {
-                gap: 1rem;
-            }
-
-            .countdown {
-                gap: 0.5rem;
-            }
-
-            .countdown-item {
-                min-width: 70px;
-                padding: 0.8rem;
-            }
-
-            .countdown-number {
-                font-size: 1.5rem;
-            }
-
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
         }
 
         @media (max-width: 480px) {
-            .hero-title {
+            .hero-text h1 {
                 font-size: 2rem;
-            }
-
-            .price-sale {
-                font-size: 2rem;
-            }
-
-            .cta-title {
-                font-size: 2rem;
-            }
-
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
             }
 
             .cta-button {
-                padding: 1rem 2rem;
+                padding: 18px 40px;
                 font-size: 1.1rem;
+            }
+
+            .price-container {
+                margin: 0 20px;
+                padding: 30px;
+            }
+
+            .sale-price {
+                font-size: 2.2rem;
             }
         }
     </style>
@@ -702,15 +587,15 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">SoftStep</div>
-                <div class="stats">
+                <div class="logo">Premium Sandals</div>
+                <div class="live-stats">
                     <div class="stat-item">
-                        <span class="stat-number" id="viewers">1,247</span>
-                        <span class="stat-label">Sedang Melihat</span>
+                        <i class="fas fa-eye pulse"></i>
+                        <span id="viewers">1,247</span> sedang melihat
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" id="stock">23</span>
-                        <span class="stat-label">Stok Tersisa</span>
+                        <i class="fas fa-box"></i>
+                        <span id="stock">23</span> stok tersisa
                     </div>
                 </div>
             </div>
@@ -722,16 +607,8 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge">
-                        <i class="fas fa-crown"></i> Premium Quality
-                    </div>
-                    <h1 class="hero-title">Langkah Elegan Setiap Hari</h1>
-                    <p class="hero-subtitle">Sandal kulit premium yang memadukan kenyamanan maksimal dengan gaya yang tak terbantahkan. Dirancang khusus untuk wanita modern yang menghargai kualitas.</p>
-                    <div style="margin-top: 2rem;">
-                        <a href="#order" class="cta-button">
-                            <i class="fas fa-shopping-cart"></i> AMBIL PROMO SEKARANG!
-                        </a>
-                    </div>
+                    <h1>Women's Soft Leather Sandals</h1>
+                    <p class="tagline">Kenyamanan Premium untuk Setiap Langkah Anda - Sandal Kulit Lembut yang Mengutamakan Gaya dan Kenyamanan</p>
                 </div>
                 <div class="hero-image">
                     <img src="https://img-va.myshopline.com/image/store/1731029564140/O1CN01aka0w01okxwVYMEfP-!!2213161865264-0-cib_800x.jpeg" alt="Women's Soft Leather Sandals" onclick="openModal(this.src)">
@@ -740,343 +617,250 @@
         </div>
     </section>
 
-    <!-- Price Banner -->
-    <section class="price-banner">
-        <div class="container">
-            <div class="price-content">
-                <div class="price-original">Rp 267.000</div>
-                <div class="price-sale">Rp 179.000</div>
-                <div class="price-discount">HEMAT 33%</div>
-            </div>
-        </div>
-    </section>
-
     <!-- Countdown Timer -->
     <section class="countdown-section">
         <div class="container">
-            <h3 class="countdown-title">⚡ PROMO BERAKHIR DALAM ⚡</h3>
+            <h2 class="countdown-title">⏰ PROMO BERAKHIR DALAM:</h2>
             <div class="countdown">
                 <div class="countdown-item">
-                    <span class="countdown-number" id="hours">23</span>
-                    <span class="countdown-label">Jam</span>
+                    <span class="number" id="hours">23</span>
+                    <span class="label">Jam</span>
                 </div>
                 <div class="countdown-item">
-                    <span class="countdown-number" id="minutes">45</span>
-                    <span class="countdown-label">Menit</span>
+                    <span class="number" id="minutes">45</span>
+                    <span class="label">Menit</span>
                 </div>
                 <div class="countdown-item">
-                    <span class="countdown-number" id="seconds">32</span>
-                    <span class="countdown-label">Detik</span>
+                    <span class="number" id="seconds">30</span>
+                    <span class="label">Detik</span>
                 </div>
             </div>
+            <p>Jangan sampai terlewat! Penawaran terbatas ini hanya berlaku hari ini.</p>
         </div>
     </section>
 
     <!-- Problem & Solution -->
     <section class="problem-solution">
         <div class="container">
-            <h2 class="section-title">Mengapa Memilih SoftStep?</h2>
-            <div class="problem-grid">
-                <div class="problem-card">
-                    <i class="fas fa-exclamation-triangle card-icon"></i>
-                    <h3 class="card-title">Masalah yang Sering Dialami</h3>
-                    <p>Sandal murah yang cepat rusak, tidak nyaman untuk berjalan lama, dan membuat kaki mudah capek. Bahan yang kasar dan tidak breathable.</p>
+            <h2 class="section-title">Mengapa Anda Membutuhkan Sandal Ini?</h2>
+            <div class="problem-solution-grid">
+                <div class="problem-box">
+                    <h3>😣 Masalah yang Sering Dialami:</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>✗ Kaki sakit dan lecet setelah beraktivitas</li>
+                        <li>✗ Sandal mudah rusak dan tidak tahan lama</li>
+                        <li>✗ Desain yang monoton dan tidak fashionable</li>
+                        <li>✗ Bahan berkualitas rendah yang tidak nyaman</li>
+                        <li>✗ Sulit menemukan sandal yang pas di kaki</li>
+                    </ul>
                 </div>
-                <div class="solution-card">
-                    <i class="fas fa-check-circle card-icon"></i>
-                    <h3 class="card-title">Solusi SoftStep</h3>
-                    <p>Kulit asli premium yang tahan lama, ergonomis untuk kenyamanan maksimal, dan desain yang breathable. Investasi terbaik untuk kaki Anda.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Gallery -->
-    <section class="gallery-section">
-        <div class="container">
-            <h2 class="section-title">Galeri Produk</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item" onclick="openModal('https://img-va.myshopline.com/image/store/1731029564140/O1CN01wlZlNQ1okxwXyvNXZ-!!2213161865264-0-cib_800x.jpeg')">
-                    <img src="https://img-va.myshopline.com/image/store/1731029564140/O1CN01wlZlNQ1okxwXyvNXZ-!!2213161865264-0-cib_800x.jpeg" alt="Detail Produk 1">
-                    <div class="gallery-overlay">
-                        <h4>Detail Kulit Premium</h4>
-                        <p>Klik untuk melihat lebih besar</p>
-                    </div>
-                </div>
-                <div class="gallery-item" onclick="openModal('https://img-va.myshopline.com/image/store/1731029564140/O1CN01RbO1XX1vpjNPuQruu-!!2218851526222-0-cib_800x.jpeg')">
-                    <img src="https://img-va.myshopline.com/image/store/1731029564140/O1CN01RbO1XX1vpjNPuQruu-!!2218851526222-0-cib_800x.jpeg" alt="Detail Produk 2">
-                    <div class="gallery-overlay">
-                        <h4>Kenyamanan Optimal</h4>
-                        <p>Klik untuk melihat lebih besar</p>
-                    </div>
-                </div>
-                <div class="gallery-item" onclick="openModal('https://img-va.myshopline.com/image/store/1731029564140/O1CN01vhCvkV1qgVJibZALp-!!2219772165525-0-cib_750x.jpeg')">
-                    <img src="https://img-va.myshopline.com/image/store/1731029564140/O1CN01vhCvkV1qgVJibZALp-!!2219772165525-0-cib_750x.jpeg" alt="Detail Produk 3">
-                    <div class="gallery-overlay">
-                        <h4>Desain Elegan</h4>
-                        <p>Klik untuk melihat lebih besar</p>
-                    </div>
-                </div>
-                <div class="gallery-item" onclick="openModal('https://img-va.myshopline.com/image/store/1731029564140/fdc0fe481e459fcbf08b43146139c1f0.jpg')">
-                    <img src="https://img-va.myshopline.com/image/store/1731029564140/fdc0fe481e459fcbf08b43146139c1f0.jpg" alt="Model Wearing">
-                    <div class="gallery-overlay">
-                        <h4>Gaya Sehari-hari</h4>
-                        <p>Klik untuk melihat lebih besar</p>
-                    </div>
+                <div class="solution-box">
+                    <h3>✨ Solusi yang Kami Tawarkan:</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>✓ Material kulit premium yang lembut dan nyaman</li>
+                        <li>✓ Desain ergonomis yang mengikuti bentuk kaki</li>
+                        <li>✓ Tahan lama dengan kualitas konstruksi terbaik</li>
+                        <li>✓ Gaya modern yang cocok untuk berbagai acara</li>
+                        <li>✓ Tersedia berbagai ukuran untuk kenyamanan maksimal</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features -->
-    <section class="features-section">
+    <section class="features">
         <div class="container">
             <h2 class="section-title">Fitur Unggulan</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <i class="fas fa-gem feature-icon"></i>
-                    <h3 class="feature-title">Kulit Asli Premium</h3>
-                    <p>Terbuat dari kulit asli berkualitas tinggi yang lembut, tahan lama, dan semakin cantik seiring waktu.</p>
+                    <div class="feature-icon">🌟</div>
+                    <h3>Premium Leather</h3>
+                    <p>Dibuat dari kulit asli berkualitas tinggi yang lembut, tahan lama, dan semakin indah seiring waktu.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-heart feature-icon"></i>
-                    <h3 class="feature-title">Ergonomis & Nyaman</h3>
-                    <p>Desain yang mengikuti bentuk kaki alami untuk kenyamanan maksimal sepanjang hari.</p>
+                    <div class="feature-icon">💆‍♀️</div>
+                    <h3>Ergonomic Design</h3>
+                    <p>Desain yang mengikuti bentuk alami kaki untuk kenyamanan maksimal sepanjang hari.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-wind feature-icon"></i>
-                    <h3 class="feature-title">Breathable</h3>
-                    <p>Material yang memungkinkan sirkulasi udara optimal, menjaga kaki tetap segar dan kering.</p>
+                    <div class="feature-icon">👗</div>
+                    <h3>Versatile Style</h3>
+                    <p>Cocok untuk berbagai outfit dan acara, dari kasual hingga semi-formal.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-palette feature-icon"></i>
-                    <h3 class="feature-title">Desain Versatile</h3>
-                    <p>Cocok untuk berbagai acara, dari kasual hingga semi-formal. Mudah dipadukan dengan outfit apapun.</p>
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Anti-Slip Sole</h3>
+                    <p>Sol anti-selip yang memberikan grip optimal dan keamanan saat berjalan.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Product Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeri Produk</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://img-va.myshopline.com/image/store/1731029564140/O1CN01wlZlNQ1okxwXyvNXZ-!!2213161865264-0-cib_800x.jpeg" alt="Detail Produk" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://img-va.myshopline.com/image/store/1731029564140/O1CN01RbO1XX1vpjNPuQruu-!!2218851526222-0-cib_800x.jpeg" alt="Tampilan Samping" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://img-va.myshopline.com/image/store/1731029564140/O1CN01vhCvkV1qgVJibZALp-!!2219772165525-0-cib_750x.jpeg" alt="Detail Bahan" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://img-va.myshopline.com/image/store/1731029564140/8a9bc80e0bef426a8ccbd4a2cab6e241.gif" alt="Demonstrasi Produk" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://img-va.myshopline.com/image/store/1731029564140/fdc0fe481e459fcbf08b43146139c1f0.jpg" alt="Kualitas Premium" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://img-va.myshopline.com/image/store/1731029564140/9afcd14e2a8f4bf8ab0af6fd68b5bf70.gif" alt="Fleksibilitas Sandal" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Product Image">
+        </div>
+    </div>
 
     <!-- Testimonials -->
-    <section class="testimonials-section">
+    <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">Apa Kata Mereka?</h2>
+            <h2 class="section-title">Apa Kata Pelanggan Kami</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="testimonial-quote">"</div>
-                    <p class="testimonial-text">Sandal terenak yang pernah saya punya! Sudah 6 bulan pakai setiap hari masih like new. Worth every penny!</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SR</div>
-                        <div class="author-info">
-                            <h4>Sari Rahayu</h4>
-                            <span>Jakarta • Verified Buyer</span>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">S</div>
+                        <div class="testimonial-info">
+                            <h4>Sari Wahyuni</h4>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
+                    <p>"Sandal ini benar-benar nyaman! Saya pakai seharian untuk jalan-jalan dan kaki tidak sakit sama sekali. Bahannya juga premium banget, worth it!"</p>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-quote">"</div>
-                    <p class="testimonial-text">Awalnya ragu beli online, tapi ternyata kualitasnya premium banget! Empuk, ringan, dan gak bikin lecet sama sekali.</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">DN</div>
-                        <div class="author-info">
-                            <h4>Dewi Nurjanah</h4>
-                            <span>Surabaya • Verified Buyer</span>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">M</div>
+                        <div class="testimonial-info">
+                            <h4>Maya Putri</h4>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
+                    <p>"Kualitasnya amazing! Sudah 6 bulan pakai masih seperti baru. Desainnya juga cocok dipakai kemana-mana, dari outfit santai sampai agak formal."</p>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-quote">"</div>
-                    <p class="testimonial-text">Perfect untuk ibu-ibu yang aktif seperti saya. Nyaman buat jalan-jalan ke mall atau acara keluarga. Highly recommended!</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">MA</div>
-                        <div class="author-info">
-                            <h4>Maya Anggraini</h4>
-                            <span>Bandung • Verified Buyer</span>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">D</div>
+                        <div class="testimonial-info">
+                            <h4>Dewi Lestari</h4>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
+                    <p>"Paling suka sama sol-nya yang anti slip. Aman banget waktu hujan. Plus bentuknya yang ergonomis bikin kaki ga cape meski dipake lama."</p>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-quote">"</div>
-                    <p class="testimonial-text">Kualitas juara! Bahan kulit asli yang soft dan fleksibel. Udah beli 2 pasang karena terlalu suka. Customer service juga ramah banget.</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">LK</div>
-                        <div class="author-info">
-                            <h4>Linda Kartika</h4>
-                            <span>Yogyakarta • Verified Buyer</span>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">R</div>
+                        <div class="testimonial-info">
+                            <h4>Rina Agustin</h4>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
+                    <p>"Beli karena liat reviewnya bagus dan ternyata beneran! Bahan kulitnya lembut, jahitannya rapi, dan yang paling penting nyaman banget dipakai."</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Authority Badges -->
-    <section style="padding: 3rem 0; background: var(--white); text-align: center;">
+    <!-- Price Banner -->
+    <section class="price-banner">
         <div class="container">
-            <h3 style="margin-bottom: 2rem; color: var(--text-dark);">Dipercaya & Bersertifikat</h3>
-            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; align-items: center;">
-                <div style="display: flex; align-items: center; gap: 0.5rem; background: var(--accent); padding: 1rem 1.5rem; border-radius: 10px;">
-                    <i class="fas fa-shield-alt" style="color: var(--success); font-size: 1.5rem;"></i>
-                    <span style="font-weight: 600;">100% Original</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem; background: var(--accent); padding: 1rem 1.5rem; border-radius: 10px;">
-                    <i class="fas fa-truck" style="color: var(--primary); font-size: 1.5rem;"></i>
-                    <span style="font-weight: 600;">Free Ongkir</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem; background: var(--accent); padding: 1rem 1.5rem; border-radius: 10px;">
-                    <i class="fas fa-medal" style="color: var(--warning); font-size: 1.5rem;"></i>
-                    <span style="font-weight: 600;">Garansi Kualitas</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem; background: var(--accent); padding: 1rem 1.5rem; border-radius: 10px;">
-                    <i class="fas fa-star" style="color: var(--warning); font-size: 1.5rem;"></i>
-                    <span style="font-weight: 600;">4.9/5 Rating</span>
-                </div>
+            <div class="price-container">
+                <div class="discount-badge">HEMAT 49%</div>
+                <div class="original-price">Rp 266.710</div>
+                <div class="sale-price">Rp 179.000</div>
+                <p style="margin-bottom: 30px;">Penawaran terbatas! Stok sangat terbatas.</p>
+                <a href="https://luna.orderonline.id/soft-leather-sandals" class="cta-button" target="_blank">
+                    🔥 AMBIL PROMO!
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Bonus Section -->
-    <section style="padding: 3rem 0; background: var(--gradient-2);">
+    <!-- Trust Badges -->
+    <section class="trust-badges">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <h2 class="section-title">🎁 Bonus Eksklusif Hari Ini!</h2>
-                <p style="font-size: 1.2rem; color: var(--text-light);">Dapatkan bonus menarik untuk 50 pembeli pertama</p>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                <div style="background: var(--white); padding: 2rem; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
-                    <i class="fas fa-gift" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
-                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Dust Bag Premium</h4>
-                    <p style="color: var(--text-light);">Tas penyimpanan eksklusif untuk menjaga sandal tetap awet</p>
+            <h2 class="section-title">Mengapa Memilih Kami?</h2>
+            <div class="badges-container">
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Garansi Kualitas</h4>
+                    <p>100% Original</p>
                 </div>
-                <div style="background: var(--white); padding: 2rem; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
-                    <i class="fas fa-spray-can" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
-                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Leather Care Kit</h4>
-                    <p style="color: var(--text-light);">Perawatan khusus kulit agar sandal selalu terlihat baru</p>
+                <div class="badge">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4>Pengiriman Cepat</h4>
+                    <p>1-3 Hari Kerja</p>
                 </div>
-                <div style="background: var(--white); padding: 2rem; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
-                    <i class="fas fa-headset" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
-                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">24/7 Support</h4>
-                    <p style="color: var(--text-light);">Customer service siap membantu kapan saja</p>
+                <div class="badge">
+                    <i class="fas fa-money-back"></i>
+                    <h4>Money Back</h4>
+                    <p>Jaminan Uang Kembali</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="cta-section" id="order">
-        <div class="container">
-            <h2 class="cta-title">Jangan Sampai Kehabisan!</h2>
-            <p class="cta-subtitle">Stok terbatas hanya 23 pasang tersisa. Ribuan wanita sudah merasakan kenyamanannya.</p>
-            <div style="margin: 2rem 0;">
-                <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
-                    <div style="text-align: center;">
-                        <div style="font-size: 2rem; font-weight: 800; color: var(--warning);">Rp 179.000</div>
-                        <div style="text-decoration: line-through; opacity: 0.7;">Rp 267.000</div>
-                    </div>
-                    <div style="background: var(--danger); padding: 1rem 2rem; border-radius: 25px; font-weight: 700; font-size: 1.2rem;">
-                        HEMAT Rp 88.000!
-                    </div>
+                <div class="badge">
+                    <i class="fas fa-customer-service"></i>
+                    <h4>Customer Service</h4>
+                    <p>24/7 Support</p>
                 </div>
-            </div>
-            <a href="https://luna.orderonline.id/soft-leather-sandals" target="_blank" class="cta-button">
-                <i class="fas fa-shopping-cart"></i> AMBIL PROMO SEKARANG!
-            </a>
-            <p class="urgency-text">
-                ⚡ Promo berakhir dalam <span id="final-countdown"></span> ⚡<br>
-                🔥 Stok tinggal <span id="final-stock">23</span> pasang!
-            </p>
-            <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; opacity: 0.9;">
-                <span><i class="fas fa-shield-alt"></i> Garansi 30 Hari</span>
-                <span><i class="fas fa-truck"></i> Gratis Ongkir</span>
-                <span><i class="fas fa-credit-card"></i> Bayar di Tempat</span>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="background: var(--text-dark); color: var(--white); padding: 2rem 0; text-align: center;">
+    <footer class="footer">
         <div class="container">
-            <div style="margin-bottom: 1rem;">
-                <div class="logo" style="font-size: 1.5rem;">SoftStep</div>
-                <p style="margin: 0.5rem 0; opacity: 0.8;">Premium Women's Leather Sandals</p>
-            </div>
-            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                <a href="#" style="color: var(--white); text-decoration: none; opacity: 0.8;">Tentang Kami</a>
-                <a href "#" style="color: var(--white); text-decoration: none; opacity: 0.8;">Kebijakan Privasi</a>
-                <a href="#" style="color: var(--white); text-decoration: none; opacity: 0.8;">Syarat & Ketentuan</a>
-                <a href="#" style="color: var(--white); text-decoration: none; opacity: 0.8;">Kontak</a>
-            </div>
-            <p style="opacity: 0.6; font-size: 0.9rem;">&copy; 2024 SoftStep. All rights reserved.</p>
+            <p>&copy; 2025 Premium Sandals. All rights reserved.</p>
+            <p>Kenyamanan dan gaya untuk setiap langkah Anda</p>
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
-
     <script>
-        // Dynamic counters
+        // Dynamic Counters
         function updateCounters() {
             const viewers = document.getElementById('viewers');
             const stock = document.getElementById('stock');
-            const finalStock = document.getElementById('final-stock');
             
-            // Simulate viewer count changes
-            setInterval(() => {
-                const currentViewers = parseInt(viewers.textContent);
-                const change = Math.floor(Math.random() * 10) - 5;
-                const newViewers = Math.max(1200, Math.min(1300, currentViewers + change));
-                viewers.textContent = newViewers;
-            }, 3000);
+            // Simulate live viewers (fluctuating between 1200-1300)
+            const currentViewers = Math.floor(Math.random() * 100) + 1200;
+            viewers.textContent = currentViewers.toLocaleString();
             
-            // Simulate stock decreases
-            setInterval(() => {
-                const currentStock = parseInt(stock.textContent);
-                if (currentStock > 15 && Math.random() < 0.3) {
-                    const newStock = currentStock - 1;
-                    stock.textContent = newStock;
-                    finalStock.textContent = newStock;
-                }
-            }, 45000);
+            // Simulate decreasing stock (starts at 23, decreases slowly)
+            let currentStock = parseInt(stock.textContent);
+            if (Math.random() < 0.1 && currentStock > 5) { // 10% chance to decrease, minimum 5
+                currentStock--;
+                stock.textContent = currentStock;
+            }
         }
 
-        // Countdown timer
+        // Update counters every 5 seconds
+        setInterval(updateCounters, 5000);
+
+        // Countdown Timer
         function updateCountdown() {
             const now = new Date().getTime();
             const tomorrow = new Date();
             tomorrow.setDate(tomorrow.getDate() + 1);
             tomorrow.setHours(0, 0, 0, 0);
-            const distance = tomorrow.getTime() - now;
+            const distance = tomorrow - now;
 
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -1085,26 +869,47 @@
             document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
             document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-            document.getElementById('final-countdown').textContent = `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+            if (distance < 0) {
+                // Reset to 24 hours if countdown reaches zero
+                document.getElementById('hours').textContent = '23';
+                document.getElementById('minutes').textContent = '59';
+                document.getElementById('seconds').textContent = '59';
+            }
         }
 
-        // Modal functions
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+
+        // Modal Functions
         function openModal(src) {
-            document.getElementById('imageModal').style.display = 'block';
-            document.getElementById('modalImage').src = src;
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = src;
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
-            document.getElementById('imageModal').style.display = 'none';
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
         }
 
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('imageModal');
-            if (event.target === modal) {
+        // Close modal when clicking outside the image
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
                 closeModal();
             }
-        }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1120,41 +925,196 @@
             });
         });
 
-        // Initialize all functions
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
         document.addEventListener('DOMContentLoaded', function() {
-            updateCounters();
-            updateCountdown();
-            setInterval(updateCountdown, 1000);
-            
-            // Add scroll animations
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.animationPlayState = 'running';
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('[class*="fadeInUp"], [class*="slideIn"]').forEach(el => {
+            const animateElements = document.querySelectorAll('.feature-card, .testimonial-card, .gallery-item, .problem-box, .solution-box');
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
                 observer.observe(el);
             });
         });
 
-        // Add floating effect to CTA button
-        setInterval(() => {
-            const ctaButtons = document.querySelectorAll('.cta-button');
-            ctaButtons.forEach(btn => {
-                btn.style.transform = 'translateY(-2px) scale(1.02)';
+        // CTA Button pulse effect on scroll
+        window.addEventListener('scroll', function() {
+            const ctaButton = document.querySelector('.cta-button');
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            // Increase pulse intensity as user scrolls down
+            const scrollPercentage = scrollPosition / (documentHeight - windowHeight);
+            if (scrollPercentage > 0.3) {
+                ctaButton.style.animationDuration = '1s';
+            }
+            if (scrollPercentage > 0.6) {
+                ctaButton.style.animationDuration = '0.8s';
+            }
+            if (scrollPercentage > 0.8) {
+                ctaButton.style.animationDuration = '0.6s';
+            }
+        });
+
+        // Add floating CTA button on mobile
+        function addFloatingCTA() {
+            if (window.innerWidth <= 768) {
+                const existingFloat = document.getElementById('floating-cta');
+                if (!existingFloat) {
+                    const floatingCTA = document.createElement('div');
+                    floatingCTA.id = 'floating-cta';
+                    floatingCTA.innerHTML = '<a href="https://luna.orderonline.id/soft-leather-sandals" target="_blank" class="cta-button" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 1000; padding: 15px 30px; font-size: 1rem;">🔥 AMBIL PROMO!</a>';
+                    document.body.appendChild(floatingCTA);
+                }
+            } else {
+                const existingFloat = document.getElementById('floating-cta');
+                if (existingFloat) {
+                    existingFloat.remove();
+                }
+            }
+        }
+
+        // Add floating CTA on load and resize
+        window.addEventListener('load', addFloatingCTA);
+        window.addEventListener('resize', addFloatingCTA);
+
+        // Track CTA clicks (for analytics)
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // You can add analytics tracking here
+                console.log('CTA clicked:', this.href);
+                
+                // Optional: Show a loading state
+                const originalText = this.innerHTML;
+                this.innerHTML = '⏳ Memproses...';
                 setTimeout(() => {
-                    btn.style.transform = 'translateY(0) scale(1)';
-                }, 200);
+                    this.innerHTML = originalText;
+                }, 1000);
             });
-        }, 3000);
+        });
+
+        // Lazy loading for images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // Add subtle parallax effect to hero section
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.querySelector('.hero-image img');
+            if (heroImage) {
+                heroImage.style.transform = `translateY(${scrolled * 0.2}px) scale(1.05)`;
+            }
+        });
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Start counters
+            updateCounters();
+            
+            // Add hover effects to gallery items
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05) rotate(1deg)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) rotate(0deg)';
+                });
+            });
+
+            // Add ripple effect to CTA buttons
+            document.querySelectorAll('.cta-button').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.cssText = `
+                        position: absolute;
+                        border-radius: 50%;
+                        background: rgba(255,255,255,0.6);
+                        pointer-events: none;
+                        transform: scale(0);
+                        animation: ripple 0.6s linear;
+                        width: ${size}px;
+                        height: ${size}px;
+                        left: ${x}px;
+                        top: ${y}px;
+                    `;
+                    
+                    this.style.position = 'relative';
+                    this.style.overflow = 'hidden';
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+
+            // Add CSS for ripple animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes ripple {
+                    to {
+                        transform: scale(4);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+
+        // Performance optimization: Debounce scroll events
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Apply debouncing to scroll events
+        const debouncedScroll = debounce(function() {
+            // Your scroll logic here
+        }, 16); // ~60fps
+
+        window.addEventListener('scroll', debouncedScroll);
     </script>
 </body>
 </html>
