@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Thick-Soled Flip-Flops Sandals For Women's - Promo Terbatas!</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Women's Soft Leather Sandals - Kenyamanan Premium Setiap Langkah</title>
+    <meta name="description" content="Sandal kulit premium untuk wanita modern. Desain elegan, bahan berkualitas tinggi, nyaman digunakan sepanjang hari.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
         * {
             margin: 0;
@@ -12,10 +19,29 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --primary: #8B4513;
+            --primary-light: #CD853F;
+            --secondary: #DEB887;
+            --accent: #F4E4BC;
+            --text-dark: #2C1810;
+            --text-light: #6B4E37;
+            --white: #FFFFFF;
+            --black: #000000;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --gradient-1: linear-gradient(135deg, #8B4513 0%, #CD853F 100%);
+            --gradient-2: linear-gradient(135deg, #DEB887 0%, #F4E4BC 100%);
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
+            --shadow-lg: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text-dark);
             overflow-x: hidden;
         }
 
@@ -25,508 +51,16 @@
             padding: 0 20px;
         }
 
-        /* Floating Stats */
-        .floating-stats {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 15px;
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            animation: float 3s ease-in-out infinite;
-        }
-
-        .stat-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-            font-size: 12px;
-        }
-
-        .stat-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .stat-icon {
-            width: 20px;
-            height: 20px;
-            margin-right: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .viewers-dot {
-            width: 8px;
-            height: 8px;
-            background: #22c55e;
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-
-        .stock-bar {
-            width: 12px;
-            height: 12px;
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
-            border-radius: 2px;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1.5" fill="white" opacity="0.05"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            opacity: 0.3;
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-text {
-            color: white;
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            animation: slideInLeft 1s ease-out;
-        }
-
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 20px;
-            animation: slideInLeft 1s ease-out 0.2s both;
-        }
-
-        .hero-subtitle {
-            font-size: 1.3rem;
-            opacity: 0.9;
-            margin-bottom: 30px;
-            animation: slideInLeft 1s ease-out 0.4s both;
-        }
-
-        .hero-image {
-            position: relative;
-            animation: slideInRight 1s ease-out 0.6s both;
-        }
-
-        .hero-product-img {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .hero-product-img:hover {
-            transform: scale(1.05) rotate(2deg);
-        }
-
-        /* Price Banner */
-        .price-banner {
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            margin: 40px 0;
-            position: relative;
-            overflow: hidden;
-            animation: slideInUp 1s ease-out 0.8s both;
-        }
-
-        .price-banner::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 10px,
-                rgba(255, 255, 255, 0.1) 10px,
-                rgba(255, 255, 255, 0.1) 20px
-            );
-            animation: shimmer 3s linear infinite;
-        }
-
-        .price-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .price-old {
-            font-size: 1.5rem;
-            text-decoration: line-through;
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 5px;
-        }
-
-        .price-new {
-            font-size: 3rem;
-            font-weight: 700;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .price-save {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            padding: 8px 15px;
-            border-radius: 50px;
-            font-size: 14px;
-            font-weight: 600;
-            color: white;
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        /* CTA Button */
-        .cta-button {
-            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
-            color: white;
-            padding: 18px 40px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            font-weight: 700;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transition: left 0.5s;
-        }
-
-        .cta-button:hover::before {
-            left: 100%;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
-        }
-
-        /* Countdown Timer */
-        .countdown-section {
-            background: #1a1a1a;
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .countdown-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #ff6b6b;
-        }
-
-        .countdown-timer {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 40px 0;
-            flex-wrap: wrap;
-        }
-
-        .countdown-item {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            padding: 20px;
-            border-radius: 15px;
-            min-width: 100px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .countdown-number {
-            font-size: 3rem;
-            font-weight: 700;
-            display: block;
-        }
-
-        .countdown-label {
-            font-size: 14px;
-            opacity: 0.8;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Problem Solution Section */
-        .problem-solution {
-            padding: 100px 0;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: #333;
-        }
-
-        .problem-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-bottom: 80px;
-        }
-
-        .problem-card, .solution-card {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .problem-card:hover, .solution-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .problem-icon, .solution-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .problem-icon {
-            color: #ff6b6b;
-        }
-
-        .solution-icon {
-            color: #22c55e;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 100px 0;
-            background: white;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-        }
-
-        .feature-card {
-            text-align: center;
-            padding: 30px;
-            border-radius: 15px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        /* Product Gallery */
-        .gallery {
-            padding: 100px 0;
-            background: #f8f9fa;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .gallery-item {
-            position: relative;
-            border-radius: 15px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-
-        .gallery-img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 9999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(10px);
-        }
-
-        .modal-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 90%;
-            max-height: 90%;
-        }
-
-        .modal-img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 15px;
-            right: 25px;
-            color: white;
-            font-size: 35px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 100px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .testimonial-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .testimonial-stars {
-            color: #ffd93d;
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* Urgency Section */
-        .urgency {
-            background: #ff6b6b;
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .urgency-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .urgency-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-
-        /* Final CTA Section */
-        .final-cta {
-            background: #1a1a1a;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .final-cta-title {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 30px;
-            color: #ff6b6b;
-        }
-
         /* Animations */
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes slideInLeft {
@@ -551,100 +85,637 @@
             }
         }
 
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
 
-        @keyframes shimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        /* Header */
+        .header {
+            background: var(--gradient-1);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-md);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .stats {
+            display: flex;
+            gap: 2rem;
+            animation: slideInRight 1s ease-out;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-2);
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-badge {
+            background: var(--success);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        .hero-image {
+            position: relative;
+            animation: slideInRight 1s ease-out 0.3s both;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Price Banner */
+        .price-banner {
+            background: var(--gradient-1);
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .price-original {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        .price-sale {
+            font-size: 3rem;
+            font-weight: 800;
+            animation: pulse 2s infinite;
+        }
+
+        .price-discount {
+            background: var(--danger);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        /* Countdown Timer */
+        .countdown-section {
+            background: var(--black);
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .countdown-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--warning);
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            background: var(--primary);
+            padding: 1rem;
+            border-radius: 10px;
+            min-width: 80px;
+            animation: pulse 1s infinite alternate;
+        }
+
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: 800;
+            display: block;
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Problem Solution */
+        .problem-solution {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .problem-card, .solution-card {
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .problem-card {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border: 2px solid var(--danger);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .solution-card {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border: 2px solid var(--success);
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .problem-card:hover, .solution-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .problem-card .card-icon {
+            color: var(--danger);
+        }
+
+        .solution-card .card-icon {
+            color: var(--success);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        /* Product Gallery */
+        .gallery-section {
+            padding: 4rem 0;
+            background: var(--accent);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: filter 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            filter: brightness(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: var(--white);
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Features */
+        .features-section {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            padding: 4rem 0;
+            background: var(--gradient-2);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+            animation: fadeInUp 1s ease-out;
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-size: 3rem;
+            color: var(--primary);
+            position: absolute;
+            top: -10px;
+            left: 1rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .author-info h4 {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .author-info span {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .testimonial-stars {
+            color: var(--warning);
+            margin-top: 0.5rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 0;
+            background: var(--gradient-1);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--warning);
+            color: var(--white);
+            padding: 1.5rem 3rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-button:hover {
+            background: #e68900;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+        }
+
+        .urgency-text {
+            margin-top: 1rem;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            animation: fadeInUp 0.3s ease-out;
+        }
+
+        .modal-content {
+            margin: 5% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            animation: slideInRight 0.3s ease-out;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: var(--warning);
         }
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
-            .floating-stats {
-                position: relative;
-                top: auto;
-                left: auto;
-                margin: 20px auto;
-                width: fit-content;
+            .container {
+                padding: 0 15px;
             }
 
             .hero-content {
                 grid-template-columns: 1fr;
-                gap: 40px;
-                text-align: center;
+                gap: 2rem;
             }
 
             .hero-title {
                 font-size: 2.5rem;
             }
 
-            .countdown-timer {
-                gap: 15px;
+            .hero-subtitle {
+                font-size: 1.1rem;
             }
 
-            .countdown-item {
-                min-width: 80px;
-                padding: 15px;
+            .price-content {
+                flex-direction: column;
+                gap: 1rem;
             }
 
-            .countdown-number {
-                font-size: 2rem;
+            .price-sale {
+                font-size: 2.5rem;
+            }
+
+            .problem-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
 
             .section-title {
                 font-size: 2rem;
             }
 
-            .problem-grid, .features-grid, .testimonials-grid {
+            .cta-title {
+                font-size: 2.5rem;
+            }
+
+            .stats {
+                gap: 1rem;
+            }
+
+            .countdown {
+                gap: 0.5rem;
+            }
+
+            .countdown-item {
+                min-width: 70px;
+                padding: 0.8rem;
+            }
+
+            .countdown-number {
+                font-size: 1.5rem;
+            }
+
+            .gallery-grid {
                 grid-template-columns: 1fr;
             }
 
-            .price-new {
-                font-size: 2rem;
+            .testimonials-grid {
+                grid-template-columns: 1fr;
             }
         }
 
         @media (max-width: 480px) {
-            .container {
-                padding: 0 15px;
-            }
-
             .hero-title {
                 font-size: 2rem;
             }
 
+            .price-sale {
+                font-size: 2rem;
+            }
+
+            .cta-title {
+                font-size: 2rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
             .cta-button {
-                padding: 15px 30px;
-                font-size: 1rem;
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Floating Stats -->
-    <div class="floating-stats">
-        <div class="stat-item">
-            <div class="stat-icon">
-                <div class="viewers-dot"></div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">SoftStep</div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="viewers">1,247</span>
+                        <span class="stat-label">Sedang Melihat</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="stock">23</span>
+                        <span class="stat-label">Stok Tersisa</span>
+                    </div>
+                </div>
             </div>
-            <span id="viewers">1,247</span> sedang melihat
         </div>
-        <div class="stat-item">
-            <div class="stat-icon">
-                <div class="stock-bar"></div>
-            </div>
-            Stok: <span id="stock">23</span> tersisa
-        </div>
-    </div>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -652,26 +723,30 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <div class="hero-badge">
-                        <i class="fas fa-fire"></i> PROMO TERBATAS HARI INI!
+                        <i class="fas fa-crown"></i> Premium Quality
                     </div>
-                    <h1 class="hero-title">Sandal Jepit Thick-Soled Terbaru untuk Wanita</h1>
-                    <p class="hero-subtitle">Kenyamanan maksimal dengan gaya modern untuk aktivitas sehari-hari Anda</p>
-                    
-                    <div class="price-banner">
-                        <div class="price-content">
-                            <div class="price-old">Rp 261,146</div>
-                            <div class="price-new">Rp 175,400</div>
-                            <div class="price-save">HEMAT 33%!</div>
-                        </div>
+                    <h1 class="hero-title">Langkah Elegan Setiap Hari</h1>
+                    <p class="hero-subtitle">Sandal kulit premium yang memadukan kenyamanan maksimal dengan gaya yang tak terbantahkan. Dirancang khusus untuk wanita modern yang menghargai kualitas.</p>
+                    <div style="margin-top: 2rem;">
+                        <a href="#order" class="cta-button">
+                            <i class="fas fa-shopping-cart"></i> AMBIL PROMO SEKARANG!
+                        </a>
                     </div>
-                    
-                    <a href="https://luna.orderonline.id/flops-sandals-womens" class="cta-button">
-                        <i class="fas fa-shopping-cart"></i> AMBIL PROMO!
-                    </a>
                 </div>
                 <div class="hero-image">
-                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rash-m0o03lbm02z0f1@resize_w450_nl.webp" alt="New Thick-Soled Flip-Flops Sandals" class="hero-product-img">
+                    <img src="https://img-va.myshopline.com/image/store/1731029564140/O1CN01aka0w01okxwVYMEfP-!!2213161865264-0-cib_800x.jpeg" alt="Women's Soft Leather Sandals" onclick="openModal(this.src)">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Banner -->
+    <section class="price-banner">
+        <div class="container">
+            <div class="price-content">
+                <div class="price-original">Rp 267.000</div>
+                <div class="price-sale">Rp 179.000</div>
+                <div class="price-discount">HEMAT 33%</div>
             </div>
         </div>
     </section>
@@ -679,8 +754,8 @@
     <!-- Countdown Timer -->
     <section class="countdown-section">
         <div class="container">
-            <h2 class="countdown-title">⚡ PROMO BERAKHIR DALAM ⚡</h2>
-            <div class="countdown-timer">
+            <h3 class="countdown-title">⚡ PROMO BERAKHIR DALAM ⚡</h3>
+            <div class="countdown">
                 <div class="countdown-item">
                     <span class="countdown-number" id="hours">23</span>
                     <span class="countdown-label">Jam</span>
@@ -690,168 +765,172 @@
                     <span class="countdown-label">Menit</span>
                 </div>
                 <div class="countdown-item">
-                    <span class="countdown-number" id="seconds">30</span>
+                    <span class="countdown-number" id="seconds">32</span>
                     <span class="countdown-label">Detik</span>
                 </div>
             </div>
-            <p style="font-size: 1.2rem; opacity: 0.9;">Jangan sampai terlewat! Stok terbatas!</p>
         </div>
     </section>
 
     <!-- Problem & Solution -->
     <section class="problem-solution">
         <div class="container">
-            <h2 class="section-title">Masalah yang Sering Dihadapi Wanita</h2>
+            <h2 class="section-title">Mengapa Memilih SoftStep?</h2>
             <div class="problem-grid">
                 <div class="problem-card">
-                    <div class="problem-icon">
-                        <i class="fas fa-exclamation-triangle"></i>
-                    </div>
-                    <h3>Sandal Tidak Nyaman</h3>
-                    <p>Sandal tipis yang membuat kaki sakit dan tidak nyaman untuk berjalan lama</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <i class="fas fa-times-circle"></i>
-                    </div>
-                    <h3>Mudah Rusak</h3>
-                    <p>Sandal murah yang cepat putus atau rusak setelah pemakaian singkat</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <i class="fas fa-frown"></i>
-                    </div>
-                    <h3>Tidak Stylish</h3>
-                    <p>Desain membosankan yang tidak cocok dengan outfit modern dan trendy</p>
-                </div>
-            </div>
-
-            <h2 class="section-title" style="color: #22c55e;">Solusi Terbaik untuk Anda!</h2>
-            <div class="problem-grid">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <h3>Sol Tebal & Empuk</h3>
-                    <p>Teknologi thick-soled memberikan kenyamanan maksimal untuk aktivitas sepanjang hari</p>
+                    <i class="fas fa-exclamation-triangle card-icon"></i>
+                    <h3 class="card-title">Masalah yang Sering Dialami</h3>
+                    <p>Sandal murah yang cepat rusak, tidak nyaman untuk berjalan lama, dan membuat kaki mudah capek. Bahan yang kasar dan tidak breathable.</p>
                 </div>
                 <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Material Premium</h3>
-                    <p>Bahan berkualitas tinggi yang tahan lama dan tidak mudah rusak</p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Desain Modern</h3>
-                    <p>Gaya contemporary yang cocok untuk berbagai kesempatan dan outfit</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">Keunggulan Produk</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Eco-Friendly</h3>
-                    <p>Dibuat dari bahan ramah lingkungan yang aman dan sustainable</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-water"></i>
-                    </div>
-                    <h3>Anti-Slip</h3>
-                    <p>Sol anti selip memberikan keamanan ekstra saat berjalan</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-wind"></i>
-                    </div>
-                    <h3>Breathable</h3>
-                    <p>Desain terbuka memungkinkan sirkulasi udara yang baik</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3>Warna Menarik</h3>
-                    <p>Tersedia dalam berbagai pilihan warna yang trendy</p>
+                    <i class="fas fa-check-circle card-icon"></i>
+                    <h3 class="card-title">Solusi SoftStep</h3>
+                    <p>Kulit asli premium yang tahan lama, ergonomis untuk kenyamanan maksimal, dan desain yang breathable. Investasi terbaik untuk kaki Anda.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Product Gallery -->
-    <section class="gallery">
+    <section class="gallery-section">
         <div class="container">
             <h2 class="section-title">Galeri Produk</h2>
             <div class="gallery-grid">
-                <div class="gallery-item" onclick="openModal('https://p50nq7-d2.myshopify.com/cdn/shop/files/012228f5457347faa6df5c51a444c17b.webp')">
-                    <img src="https://p50nq7-d2.myshopify.com/cdn/shop/files/012228f5457347faa6df5c51a444c17b.webp" alt="Product Detail 1" class="gallery-img">
+                <div class="gallery-item" onclick="openModal('https://img-va.myshopline.com/image/store/1731029564140/O1CN01wlZlNQ1okxwXyvNXZ-!!2213161865264-0-cib_800x.jpeg')">
+                    <img src="https://img-va.myshopline.com/image/store/1731029564140/O1CN01wlZlNQ1okxwXyvNXZ-!!2213161865264-0-cib_800x.jpeg" alt="Detail Produk 1">
+                    <div class="gallery-overlay">
+                        <h4>Detail Kulit Premium</h4>
+                        <p>Klik untuk melihat lebih besar</p>
+                    </div>
                 </div>
-                <div class="gallery-item" onclick="openModal('https://p50nq7-d2.myshopify.com/cdn/shop/files/249a32c5bc9541728a3ef1991a25cf79.webp')">
-                    <img src="https://p50nq7-d2.myshopify.com/cdn/shop/files/249a32c5bc9541728a3ef1991a25cf79.webp" alt="Product Detail 2" class="gallery-img">
+                <div class="gallery-item" onclick="openModal('https://img-va.myshopline.com/image/store/1731029564140/O1CN01RbO1XX1vpjNPuQruu-!!2218851526222-0-cib_800x.jpeg')">
+                    <img src="https://img-va.myshopline.com/image/store/1731029564140/O1CN01RbO1XX1vpjNPuQruu-!!2218851526222-0-cib_800x.jpeg" alt="Detail Produk 2">
+                    <div class="gallery-overlay">
+                        <h4>Kenyamanan Optimal</h4>
+                        <p>Klik untuk melihat lebih besar</p>
+                    </div>
                 </div>
-                <div class="gallery-item" onclick="openModal('https://p50nq7-d2.myshopify.com/cdn/shop/files/259c3661641e4296a5f3a47981de0d88.webp')">
-                    <img src="https://p50nq7-d2.myshopify.com/cdn/shop/files/259c3661641e4296a5f3a47981de0d88.webp" alt="Product Detail 3" class="gallery-img">
+                <div class="gallery-item" onclick="openModal('https://img-va.myshopline.com/image/store/1731029564140/O1CN01vhCvkV1qgVJibZALp-!!2219772165525-0-cib_750x.jpeg')">
+                    <img src="https://img-va.myshopline.com/image/store/1731029564140/O1CN01vhCvkV1qgVJibZALp-!!2219772165525-0-cib_750x.jpeg" alt="Detail Produk 3">
+                    <div class="gallery-overlay">
+                        <h4>Desain Elegan</h4>
+                        <p>Klik untuk melihat lebih besar</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('https://img-va.myshopline.com/image/store/1731029564140/fdc0fe481e459fcbf08b43146139c1f0.jpg')">
+                    <img src="https://img-va.myshopline.com/image/store/1731029564140/fdc0fe481e459fcbf08b43146139c1f0.jpg" alt="Model Wearing">
+                    <div class="gallery-overlay">
+                        <h4>Gaya Sehari-hari</h4>
+                        <p>Klik untuk melihat lebih besar</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Modal -->
-    <div id="imageModal" class="modal">
-        <span class="modal-close" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-img" alt="Product Image">
+    <!-- Features -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Fitur Unggulan</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-gem feature-icon"></i>
+                    <h3 class="feature-title">Kulit Asli Premium</h3>
+                    <p>Terbuat dari kulit asli berkualitas tinggi yang lembut, tahan lama, dan semakin cantik seiring waktu.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-heart feature-icon"></i>
+                    <h3 class="feature-title">Ergonomis & Nyaman</h3>
+                    <p>Desain yang mengikuti bentuk kaki alami untuk kenyamanan maksimal sepanjang hari.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wind feature-icon"></i>
+                    <h3 class="feature-title">Breathable</h3>
+                    <p>Material yang memungkinkan sirkulasi udara optimal, menjaga kaki tetap segar dan kering.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-palette feature-icon"></i>
+                    <h3 class="feature-title">Desain Versatile</h3>
+                    <p>Cocok untuk berbagai acara, dari kasual hingga semi-formal. Mudah dipadukan dengan outfit apapun.</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section class="testimonials-section">
         <div class="container">
-            <h2 class="section-title">Testimoni Pelanggan</h2>
+            <h2 class="section-title">Apa Kata Mereka?</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Harganya worth it banget! Dibanding sandal mahal di mall, ini lebih nyaman dan awet. Udah beli 3 warna karena suka banget sama modelnya."</p>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Sandal terenak yang pernah saya punya! Sudah 6 bulan pakai setiap hari masih like new. Worth every penny!</p>
                     <div class="testimonial-author">
-                        <i class="fas fa-user-circle" style="font-size: 2rem;"></i>
-                        <div>
-                            <strong>Dina K.</strong><br>
-                            <small>Bandung</small>
+                        <div class="author-avatar">SR</div>
+                        <div class="author-info">
+                            <h4>Sari Rahayu</h4>
+                            <span>Jakarta • Verified Buyer</span>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Pengiriman cepat, packingnya rapi. Sandalnya empuk banget di kaki, cocok buat yang sering jalan jauh seperti saya. Terima kasih!"</p>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Awalnya ragu beli online, tapi ternyata kualitasnya premium banget! Empuk, ringan, dan gak bikin lecet sama sekali.</p>
                     <div class="testimonial-author">
-                        <i class="fas fa-user-circle" style="font-size: 2rem;"></i>
-                        <div>
-                            <strong>Lina S.</strong><br>
-                            <small>Yogyakarta</small>
+                        <div class="author-avatar">DN</div>
+                        <div class="author-info">
+                            <h4>Dewi Nurjanah</h4>
+                            <span>Surabaya • Verified Buyer</span>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Perfect untuk ibu-ibu yang aktif seperti saya. Nyaman buat jalan-jalan ke mall atau acara keluarga. Highly recommended!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MA</div>
+                        <div class="author-info">
+                            <h4>Maya Anggraini</h4>
+                            <span>Bandung • Verified Buyer</span>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Kualitas juara! Bahan kulit asli yang soft dan fleksibel. Udah beli 2 pasang karena terlalu suka. Customer service juga ramah banget.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LK</div>
+                        <div class="author-info">
+                            <h4>Linda Kartika</h4>
+                            <span>Yogyakarta • Verified Buyer</span>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -859,166 +938,170 @@
         </div>
     </section>
 
-    <!-- Urgency Section -->
-    <section class="urgency">
+    <!-- Authority Badges -->
+    <section style="padding: 3rem 0; background: var(--white); text-align: center;">
         <div class="container">
-            <div class="urgency-content">
-                <h2 class="urgency-title">🚨 STOK TERBATAS! 🚨</h2>
-                <p style="font-size: 1.3rem; margin-bottom: 20px;">
-                    Hanya tersisa <strong id="urgencyStock">23 pasang</strong> untuk promo hari ini!
-                </p>
-                <p style="font-size: 1.1rem; margin-bottom: 30px;">
-                    Jangan sampai menyesal karena kehabisan stok. Ribuan wanita sudah merasakan kenyamanannya!
-                </p>
-                <a href="https://luna.orderonline.id/flops-sandals-womens" class="cta-button">
-                    <i class="fas fa-bolt"></i> PESAN SEKARANG JUGA!
-                </a>
+            <h3 style="margin-bottom: 2rem; color: var(--text-dark);">Dipercaya & Bersertifikat</h3>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: var(--accent); padding: 1rem 1.5rem; border-radius: 10px;">
+                    <i class="fas fa-shield-alt" style="color: var(--success); font-size: 1.5rem;"></i>
+                    <span style="font-weight: 600;">100% Original</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: var(--accent); padding: 1rem 1.5rem; border-radius: 10px;">
+                    <i class="fas fa-truck" style="color: var(--primary); font-size: 1.5rem;"></i>
+                    <span style="font-weight: 600;">Free Ongkir</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: var(--accent); padding: 1rem 1.5rem; border-radius: 10px;">
+                    <i class="fas fa-medal" style="color: var(--warning); font-size: 1.5rem;"></i>
+                    <span style="font-weight: 600;">Garansi Kualitas</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; background: var(--accent); padding: 1rem 1.5rem; border-radius: 10px;">
+                    <i class="fas fa-star" style="color: var(--warning); font-size: 1.5rem;"></i>
+                    <span style="font-weight: 600;">4.9/5 Rating</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Product Description -->
-    <section style="padding: 100px 0; background: white;">
+    <!-- Bonus Section -->
+    <section style="padding: 3rem 0; background: var(--gradient-2);">
         <div class="container">
-            <h2 class="section-title">Deskripsi Produk</h2>
-            <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-                <div style="background: #f8f9fa; padding: 40px; border-radius: 15px; margin-bottom: 40px;">
-                    <h3 style="color: #667eea; margin-bottom: 20px; font-size: 1.5rem;">Spesifikasi:</h3>
-                    <ul style="line-height: 2; font-size: 1.1rem;">
-                        <li><strong>Material:</strong> EVA Premium + Rubber Anti-Slip</li>
-                        <li><strong>Ketebalan Sol:</strong> 3.5cm (Extra Thick)</li>
-                        <li><strong>Ukuran Tersedia:</strong> 36-40</li>
-                        <li><strong>Berat:</strong> 250gr per pasang</li>
-                        <li><strong>Warna:</strong> Black, Pink, White, Blue</li>
-                        <li><strong>Garansi:</strong> 30 hari uang kembali</li>
-                    </ul>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h2 class="section-title">🎁 Bonus Eksklusif Hari Ini!</h2>
+                <p style="font-size: 1.2rem; color: var(--text-light);">Dapatkan bonus menarik untuk 50 pembeli pertama</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div style="background: var(--white); padding: 2rem; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
+                    <i class="fas fa-gift" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Dust Bag Premium</h4>
+                    <p style="color: var(--text-light);">Tas penyimpanan eksklusif untuk menjaga sandal tetap awet</p>
                 </div>
-                
-                <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 40px; border-radius: 15px;">
-                    <h3 style="margin-bottom: 20px; font-size: 1.5rem;">Mengapa Memilih Produk Kami?</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-                        <div style="text-align: center;">
-                            <i class="fas fa-shipping-fast" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                            <p><strong>Gratis Ongkir</strong><br>Ke seluruh Indonesia</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <i class="fas fa-undo" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                            <p><strong>30 Hari Garansi</strong><br>Uang kembali 100%</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <i class="fas fa-certificate" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                            <p><strong>Kualitas Terjamin</strong><br>Produk original</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <i class="fas fa-headset" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                            <p><strong>CS 24/7</strong><br>Siap membantu Anda</p>
-                        </div>
-                    </div>
+                <div style="background: var(--white); padding: 2rem; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
+                    <i class="fas fa-spray-can" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Leather Care Kit</h4>
+                    <p style="color: var(--text-light);">Perawatan khusus kulit agar sandal selalu terlihat baru</p>
+                </div>
+                <div style="background: var(--white); padding: 2rem; border-radius: 15px; text-align: center; box-shadow: var(--shadow-md);">
+                    <i class="fas fa-headset" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">24/7 Support</h4>
+                    <p style="color: var(--text-light);">Customer service siap membantu kapan saja</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Final CTA -->
-    <section class="final-cta">
+    <section class="cta-section" id="order">
         <div class="container">
-            <h2 class="final-cta-title">Jangan Tunda Lagi!</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Dapatkan sandal impian Anda sekarang dengan harga spesial. Penawaran terbatas, stok terbatas!
-            </p>
-            <div style="background: linear-gradient(45deg, #ff6b6b, #ffd93d); padding: 30px; border-radius: 20px; margin: 40px 0; display: inline-block;">
-                <div style="font-size: 1.2rem; margin-bottom: 10px;">💰 HARGA NORMAL: <del>Rp 261,146</del></div>
-                <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 10px;">🔥 HARGA PROMO: Rp 175,400</div>
-                <div style="font-size: 1rem; opacity: 0.9;">⚡ Hemat Rp 85,746 (33% OFF)</div>
+            <h2 class="cta-title">Jangan Sampai Kehabisan!</h2>
+            <p class="cta-subtitle">Stok terbatas hanya 23 pasang tersisa. Ribuan wanita sudah merasakan kenyamanannya.</p>
+            <div style="margin: 2rem 0;">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--warning);">Rp 179.000</div>
+                        <div style="text-decoration: line-through; opacity: 0.7;">Rp 267.000</div>
+                    </div>
+                    <div style="background: var(--danger); padding: 1rem 2rem; border-radius: 25px; font-weight: 700; font-size: 1.2rem;">
+                        HEMAT Rp 88.000!
+                    </div>
+                </div>
             </div>
-            <br>
-            <a href="https://luna.orderonline.id/flops-sandals-womens" class="cta-button" style="font-size: 1.3rem; padding: 20px 50px;">
+            <a href="https://luna.orderonline.id/soft-leather-sandals" target="_blank" class="cta-button">
                 <i class="fas fa-shopping-cart"></i> AMBIL PROMO SEKARANG!
             </a>
-            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">
-                *Promo berakhir dalam <span id="finalCountdown">23:45:30</span> atau sampai stok habis
+            <p class="urgency-text">
+                ⚡ Promo berakhir dalam <span id="final-countdown"></span> ⚡<br>
+                🔥 Stok tinggal <span id="final-stock">23</span> pasang!
             </p>
+            <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; opacity: 0.9;">
+                <span><i class="fas fa-shield-alt"></i> Garansi 30 Hari</span>
+                <span><i class="fas fa-truck"></i> Gratis Ongkir</span>
+                <span><i class="fas fa-credit-card"></i> Bayar di Tempat</span>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="background: #333; color: white; padding: 40px 0; text-align: center;">
+    <footer style="background: var(--text-dark); color: var(--white); padding: 2rem 0; text-align: center;">
         <div class="container">
-            <p style="margin-bottom: 10px;">&copy; 2025 New Thick-Soled Flip-Flops Sandals. All rights reserved.</p>
-            <p style="font-size: 0.9rem; opacity: 0.7;">Produk berkualitas dengan harga terjangkau untuk wanita Indonesia</p>
-            <div style="margin-top: 20px;">
-                <i class="fas fa-shield-alt" style="color: #22c55e; margin-right: 5px;"></i>
-                <span style="font-size: 0.9rem;">Transaksi Aman & Terpercaya</span>
+            <div style="margin-bottom: 1rem;">
+                <div class="logo" style="font-size: 1.5rem;">SoftStep</div>
+                <p style="margin: 0.5rem 0; opacity: 0.8;">Premium Women's Leather Sandals</p>
             </div>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                <a href="#" style="color: var(--white); text-decoration: none; opacity: 0.8;">Tentang Kami</a>
+                <a href "#" style="color: var(--white); text-decoration: none; opacity: 0.8;">Kebijakan Privasi</a>
+                <a href="#" style="color: var(--white); text-decoration: none; opacity: 0.8;">Syarat & Ketentuan</a>
+                <a href="#" style="color: var(--white); text-decoration: none; opacity: 0.8;">Kontak</a>
+            </div>
+            <p style="opacity: 0.6; font-size: 0.9rem;">&copy; 2024 SoftStep. All rights reserved.</p>
         </div>
     </footer>
 
-    <script>
-        // Dynamic Counters
-        function updateCounters() {
-            // Update viewers (simulate real-time)
-            const viewers = document.getElementById('viewers');
-            const currentViewers = parseInt(viewers.textContent);
-            const change = Math.floor(Math.random() * 10) - 5; // Random change between -5 to +4
-            const newViewers = Math.max(1200, Math.min(1500, currentViewers + change));
-            viewers.textContent = newViewers.toLocaleString();
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
 
-            // Update stock (decrease slowly)
+    <script>
+        // Dynamic counters
+        function updateCounters() {
+            const viewers = document.getElementById('viewers');
             const stock = document.getElementById('stock');
-            const urgencyStock = document.getElementById('urgencyStock');
-            const currentStock = parseInt(stock.textContent);
+            const finalStock = document.getElementById('final-stock');
             
-            if (Math.random() < 0.1 && currentStock > 5) { // 10% chance to decrease
-                const newStock = currentStock - 1;
-                stock.textContent = newStock;
-                urgencyStock.textContent = newStock;
-            }
+            // Simulate viewer count changes
+            setInterval(() => {
+                const currentViewers = parseInt(viewers.textContent);
+                const change = Math.floor(Math.random() * 10) - 5;
+                const newViewers = Math.max(1200, Math.min(1300, currentViewers + change));
+                viewers.textContent = newViewers;
+            }, 3000);
+            
+            // Simulate stock decreases
+            setInterval(() => {
+                const currentStock = parseInt(stock.textContent);
+                if (currentStock > 15 && Math.random() < 0.3) {
+                    const newStock = currentStock - 1;
+                    stock.textContent = newStock;
+                    finalStock.textContent = newStock;
+                }
+            }, 45000);
         }
 
-        // Countdown Timer
+        // Countdown timer
         function updateCountdown() {
             const now = new Date().getTime();
-            const endTime = now + (24 * 60 * 60 * 1000); // 24 hours from now
-            
-            setInterval(() => {
-                const currentTime = new Date().getTime();
-                const timeLeft = endTime - currentTime;
-                
-                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-                
-                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-                
-                // Update final countdown
-                const finalCountdown = document.getElementById('finalCountdown');
-                if (finalCountdown) {
-                    finalCountdown.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-                }
-            }, 1000);
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            const distance = tomorrow.getTime() - now;
+
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            document.getElementById('final-countdown').textContent = `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
         }
 
-        // Modal Functions
-        function openModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            modal.style.display = 'block';
-            modalImg.src = imageSrc;
-            document.body.style.overflow = 'hidden';
+        // Modal functions
+        function openModal(src) {
+            document.getElementById('imageModal').style.display = 'block';
+            document.getElementById('modalImage').src = src;
         }
 
         function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
+            document.getElementById('imageModal').style.display = 'none';
         }
 
         // Close modal when clicking outside
         window.onclick = function(event) {
             const modal = document.getElementById('imageModal');
-            if (event.target == modal) {
+            if (event.target === modal) {
                 closeModal();
             }
         }
@@ -1037,96 +1120,41 @@
             });
         });
 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animationPlayState = 'running';
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements for animation
-        document.querySelectorAll('.problem-card, .solution-card, .feature-card, .testimonial-card, .gallery-item').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Initialize functions
+        // Initialize all functions
         document.addEventListener('DOMContentLoaded', function() {
-            updateCountdown();
             updateCounters();
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
             
-            // Update counters every 5-15 seconds
-            setInterval(updateCounters, Math.random() * 10000 + 5000);
+            // Add scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('[class*="fadeInUp"], [class*="slideIn"]').forEach(el => {
+                observer.observe(el);
+            });
         });
 
-        // Add hover effects to CTA buttons
-        document.querySelectorAll('.cta-button').forEach(button => {
-            button.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-3px) scale(1.05)';
-            });
-            
-            button.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // Add click analytics (simulated)
-        document.querySelectorAll('.cta-button').forEach(button => {
-            button.addEventListener('click', function() {
-                // Simulate analytics tracking
-                console.log('CTA clicked:', this.textContent.trim());
-                
-                // Add loading state
-                const originalText = this.innerHTML;
-                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Memproses...';
-                this.style.pointerEvents = 'none';
-                
+        // Add floating effect to CTA button
+        setInterval(() => {
+            const ctaButtons = document.querySelectorAll('.cta-button');
+            ctaButtons.forEach(btn => {
+                btn.style.transform = 'translateY(-2px) scale(1.02)';
                 setTimeout(() => {
-                    this.innerHTML = originalText;
-                    this.style.pointerEvents = 'auto';
-                }, 1000);
+                    btn.style.transform = 'translateY(0) scale(1)';
+                }, 200);
             });
-        });
+        }, 3000);
     </script>
 </body>
-</html> fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Sandal ini benar-benar nyaman banget! Sol tebalnya bikin kaki ga sakit meskipun dipake seharian. Designnya juga kece, cocok sama outfit apapun!"</p>
-                    <div class="testimonial-author">
-                        <i class="fas fa-user-circle" style="font-size: 2rem;"></i>
-                        <div>
-                            <strong>Sari M.</strong><br>
-                            <small>Jakarta</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Kualitasnya bagus banget, udah 6 bulan pake masih awet. Anti slip nya juga oke, ga takut jatuh pas hujan. Pokoknya recommended deh!"</p>
-                    <div class="testimonial-author">
-                        <i class="fas fa-user-circle" style="font-size: 2rem;"></i>
-                        <div>
-                            <strong>Maya R.</strong><br>
-                            <small>Surabaya</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas
+</html>
